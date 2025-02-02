@@ -120,7 +120,6 @@ img {
 .search-form__textfield {
   appearance: none;
   background-color: transparent;
-  border-style: none;
   border-width: 1px 0 1px 0;
   border-color: #fff;
   border-style: solid;
@@ -171,7 +170,7 @@ img {
   background-position: center;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
 }
