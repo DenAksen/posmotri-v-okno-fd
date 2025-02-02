@@ -15,7 +15,7 @@ html {
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
-  padding-top: 67px;
+  /*padding-top: 67px; возможный артефакт в тестах*/
   background-color: #1b1919;
   display: flex;
   justify-content: center;
