@@ -19,7 +19,7 @@ html {
   background-color: #1b1919;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 h1,
@@ -74,9 +74,8 @@ img {
   grid-template-columns: max(711px) max(399px);
   grid-template-rows: 100%;
   grid-template-areas: "result content__details";
-  justify-items: end;
   align-items: end;
-  gap: 28px;
+  gap: 29px;
 }
 
 .result {
@@ -123,7 +122,7 @@ img {
   border-width: 1px 0 1px 0;
   border-color: #fff;
   border-style: solid;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   padding: 2.5px 0;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: inherit;
@@ -131,6 +130,10 @@ img {
   line-height: 21.6px;
   min-inline-size: 225px;
   outline: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-form__textfield:active {
@@ -145,6 +148,7 @@ img {
 .search-form__label {
   display: flex;
   width: fit-content;
+  align-items: center;
   gap: 5px;
 }
 
@@ -179,16 +183,19 @@ img {
   background-color: transparent;
   color: inherit;
   font-family: "Fira Sans Condensed", sans-serif;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   font-size: inherit;
   font-weight: 700;
   line-height: 21.6px;
   text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .search-form__submit-button {
   align-self: flex-end;
-  padding: 6px 73px;
+  padding-left: 73px;
+  padding-right: 73px;
   max-height: max-content;
 }
 
@@ -219,16 +226,9 @@ img {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 26px;
   inline-size: min-content;
-  block-size: min(534px);
   grid-area: content__details;
-  overflow: hidden;
-}
-
-/* Чтобы отображались границы кнопки*/
-.content__details:last-child {
-  margin-bottom: 3px;
 }
 
 .title {
@@ -241,8 +241,9 @@ img {
 
 .content__list-container {
   position: relative;
+  top: -4px;
   min-width: 390px;
-  min-height: 298px;
+  height: 298px;
   overflow: clip auto;
 }
 
@@ -259,8 +260,7 @@ img {
 
 .content__video-card {
   display: grid;
-  grid-template-columns: 198px 194px;
-  grid-template-rows: max(103px);
+  grid-template-columns: 198px 196px;
   align-items: start;
 }
 
@@ -296,8 +296,8 @@ img {
 }
 
 .content__video-card-thumbnail {
-  width: 100%;
-  height: 100%;
+  width: 194px;
+  height: 103px;
   object-fit: cover;
   object-position: center;
 }
@@ -308,6 +308,10 @@ img {
 
 .content__card-link:hover {
   text-decoration: underline;
+}
+
+.content__card-link:active .content__video-card-description-container {
+  background-color: #545050;
 }
 
 .content__card-link_current .content__video-card-description-container {
