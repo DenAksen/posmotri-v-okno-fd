@@ -15,7 +15,6 @@ html {
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
-  /*padding-top: 67px; возможный артефакт в тестах*/
   background-color: #1b1919;
   display: flex;
   justify-content: center;
@@ -75,7 +74,7 @@ img {
   grid-template-rows: 100%;
   grid-template-areas: "result content__details";
   align-items: end;
-  gap: 29px;
+  gap: 30px;
 }
 
 .result {
@@ -100,7 +99,6 @@ img {
 .search-form {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 3px;
 }
 
 .search-form__fieldset {
@@ -226,8 +224,7 @@ img {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
-  inline-size: min-content;
+  gap: 22px;
   grid-area: content__details;
 }
 
@@ -241,10 +238,9 @@ img {
 
 .content__list-container {
   position: relative;
-  top: -4px;
   min-width: 390px;
   height: 298px;
-  overflow: clip auto;
+  overflow: auto auto;
 }
 
 .content__list {
@@ -267,7 +263,7 @@ img {
 .content__video-card-description-container {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 2px;
   padding-left: 2px;
   height: 100%;
 }
